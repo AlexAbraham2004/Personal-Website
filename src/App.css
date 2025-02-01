@@ -302,15 +302,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 20px 0 !important; /* ✅ Reduce bottom padding */
   position: relative;
+
 }
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  padding: 40px 30px !important; /* ✅ Reduce padding */
+  margin-top: -40px !important; /* ✅ Move it up slightly */
+  margin-bottom: 0 !important; /* ✅ Remove extra spacing */
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
 }
 .skill h2 {
 	font-size: 45px;
@@ -346,6 +355,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+.project-link {
+  display: block;
+  width: 100%;
+  max-width: 350px; /* ✅ Set a max width */
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-link img {
+  width: 100%; /* ✅ Ensures full size */
+  height: auto;
+}
+
+.project-link:hover {
+  transform: scale(1.05);
+}
+.project-card-link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
+.proj-imgbx {
+  width: 100%;
+  max-width: 350px; /* ✅ Ensures proper card sizing */
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card-link:hover .proj-imgbx {
+  transform: scale(1.05);
+}
+
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -662,3 +711,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .bottom { flex-direction: row; justify-content: center; }
 .left { flex-direction: column; }
 .right { flex-direction: column; }
+
+.project-card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.project-card-link {
+  display: block;
+  width: 100%; /* ✅ Ensures link is bounded by the card */
+  text-decoration: none;
+}
+
+.proj-imgbx {
+  width: 100%;
+  max-width: 350px; /* ✅ Keeps cards uniform */
+  transition: transform 0.3s ease-in-out;
+}
+
+.proj-imgbx img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-card-link:hover .proj-imgbx {
+  transform: scale(1.05);
+}

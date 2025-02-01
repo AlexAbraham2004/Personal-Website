@@ -106,7 +106,7 @@ export const Skills = () => {
                             bgColor='#060606'
                             bgAccentColor='#111111'
                           />  
-                        </div>
+                          </div>
                         </h2>
 
                     </div>
