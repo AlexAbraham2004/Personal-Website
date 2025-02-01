@@ -3,6 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+
+import auctionArchitects from "../assets/img/auctionArchitects.png"
+import nbaFantasy from "../assets/img/nbaFantasy.png"
+import trainTrip from "../assets/img/trainTrip.png"
+import strideSense from "../assets/img/stridesense.png"
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,39 +17,20 @@ import '../App.css'
 export const Projects = () => {
   // ✅ Categorized Personal Projects with GitHub Links
   const personalProjects = [
-    { title: "AuctionArchitects", description: "Design & Development", imgUrl: projImg1, link: "https://github.com/Shahed4/AuctionArchitects" },
-    { title: "NBA-Fantasy-App", description: "Design & Development", imgUrl: projImg2, link: "https://github.com/AlexAbraham2004/NBA-Fantasy-App" },
-    { title: "TrainTrip", description: "Design & Development", imgUrl: projImg3, link: "https://github.com/AlexAbraham2004/TrainTrip" },
+    { title: "AuctionArchitects", description: "Design & Development", imgUrl: auctionArchitects, link: "https://github.com/Shahed4/AuctionArchitects" },
+    { title: "NBA-Fantasy-App", description: "Design & Development", imgUrl: nbaFantasy, link: "https://github.com/AlexAbraham2004/NBA-Fantasy-App" },
+    { title: "TrainTrip", description: "Design & Development", imgUrl: trainTrip, link: "https://github.com/AlexAbraham2004/TrainTrip" },
   ];
   
 
   // ✅ Categorized Hackathon Projects with GitHub Links
 const hackathonProjects = [
-  {
-    title: "GreenScan",
-    description: "Hackathon Project",
-    imgUrl: projImg1, // ✅ Uses imported image
-    link: "https://github.com/Shahed4/GreenScan",
-  },
-  {
-    title: "TheraCam",
-    description: "Hackathon Project",
-    imgUrl: projImg2, // ✅ Uses imported image
-    link: "https://github.com/Shahed4/TheraCam",
-  },
-  {
-    title: "MaterniSense",
-    description: "Hackathon Project",
-    imgUrl: projImg3, // ✅ Uses imported image
-    link: "https://github.com/Shahed4/Maternisense",
-  },
-  {
-    title: "StrideSense",
-    description: "Hackathon Project",
-    imgUrl: projImg1, // ✅ Uses imported image
-    link: "#", // No link provided
-  },
+  { title: "GreenScan", description: "Hackathon Project", imgUrl: projImg1, link: "https://github.com/Shahed4/GreenScan"},
+  { title: "TheraCam", description: "Hackathon Project", imgUrl: projImg2, link: "https://github.com/Shahed4/TheraCam" },
+  { title: "MaterniSense", description: "Hackathon Project", imgUrl: projImg3, link: "https://github.com/Shahed4/Maternisense" },
+  { title: "StrideSense", description: "Hackathon Project", imgUrl: strideSense, link: "https://drive.google.com/file/d/1soKk125m047qiNw6eayR74uw46hKkulq/view?usp=sharing" }
 ];
+
   return (
     <section className="project" id="projects">
       <Container>
