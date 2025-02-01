@@ -540,7 +540,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 20px 0 20px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -616,3 +616,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.hidden {
+  display: none !important;
+}
+.dock-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 20px !important;
+}
+
+.dock {
+  display: flex !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-radius: 25px !important;
+  padding: 15px !important;
+}
+
+.dock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dock-item:hover {
+  transform: scale(1.2);
+}
+
+.dock-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.dock-item p {
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.top { flex-direction: row; justify-content: center; }
+.bottom { flex-direction: row; justify-content: center; }
+.left { flex-direction: column; }
+.right { flex-direction: column; }

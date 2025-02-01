@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = ["Web Developer", "Mobile Developer", "AI/ML Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -45,21 +45,30 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Alex Abraham`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Hello! My name is Alex Abraham. I am currently a junior at CUNY City College of New York majoring in Computer Science at the Grove School of Engineering. I am aiming to become a full-stack developer and open to internship opportunities and networking. I am on the collegiate Volleyball team and participate in the following clubs: Beaver's Code, Robotics, and SASE.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+
+
+                  <h1>
+                    {`Hi! I'm Alex Abraham `} 
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='["Web Developer", "Mobile Developer", "AI/ML Developer"]'>
+                      <span className="wrap">{text}</span>
+                    </span>
+                  </h1>
+                  <p>
+                  Hello! My name is Alex Abraham, and I am a junior at CUNY City College of New York, majoring in Computer Science at the Grove School of Engineering. I am passionate about full-stack development, machine learning, and data science, continuously expanding my technical expertise through coursework and hands-on projects. I am actively seeking internship opportunities and networking with professionals in the field. I am also a collegiate Division III Volleyball and Track athlete, an engaged member of Beaver’s Code, and the Society of Asian Scientists and Engineers (SASE). Currently, I am working on machine learning-driven applications and plan to further explore AI and software engineering through official coursework and research.                  </p>
+                  <button onClick={() => console.log('connect')}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
+                </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
@@ -73,5 +82,5 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};

@@ -6,8 +6,46 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import LogoWall from './LogoWall';
+
+import react from "../assets/img/react.svg";
+import nextjs from "../assets/img/next-js.svg";
+import materialui from "../assets/img/material-ui-1.svg";
+import bootstrap from "../assets/img/bootstrap-5-1.svg";
+import nodejs from "../assets/img/nodejs-2.svg";
+import express from "../assets/img/express-109.svg";
+import fastapi from "../assets/img/fastapi-1.svg";
+import flask from "../assets/img/flask.svg";
+import firebase from "../assets/img/firebase-1.svg";
+import mongodb from "../assets/img/mongodb-icon-2.svg";
+import postgresql from "../assets/img/postgresql.svg";
+import tensorflow from "../assets/img/tensorflow-2.svg";
+import microsoft from "../assets/img/microsoft-5.svg";
+
+
+
+
+
+
 
 export const Skills = () => {
+  const logoImgs = [
+    { imgUrl: react, altText: "React Bits Logo" }, 
+    { imgUrl: nextjs, altText: "React Bits Logo" },
+    { imgUrl: materialui, altText: "React Bits Logo" },
+    { imgUrl: bootstrap, altText: "React Bits Logo" },
+    { imgUrl: nodejs, altText: "React Bits Logo" },
+    { imgUrl: express, altText: "React Bits Logo" },
+    { imgUrl: fastapi, altText: "React Bits Logo" },
+    { imgUrl: flask, altText: "React Bits Logo" },
+    { imgUrl: firebase, altText: "React Bits Logo" },
+    { imgUrl: mongodb, altText: "React Bits Logo" },
+    { imgUrl: postgresql, altText: "React Bits Logo" },
+    { imgUrl: tensorflow, altText: "React Bits Logo" },
+    { imgUrl: microsoft, altText: "React Bits Logo" }
+  ];
+  
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -35,7 +73,9 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>
+                          As a passionate and driven software engineer, I continuously strive to expand my technical expertise and problem-solving skills. My skillset spans multiple programming languages, frameworks, and tools that enable me to tackle complex challenges and create innovative solutions.
+                        </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
@@ -54,6 +94,21 @@ export const Skills = () => {
                                 <h5>Web Development</h5>
                             </div>
                         </Carousel>
+                        <h2>
+                          <br /> Frameworks:{" "}
+                          <div style={{height: '600px', width: '100%', position: 'relative'}}>
+                          <LogoWall
+                            items={logoImgs}
+                            direction='horizontal'
+                            pauseOnHover={true}
+                            size='clamp(8rem, 1rem + 20vmin, 25rem)'
+                            duration='20s'
+                            bgColor='#060606'
+                            bgAccentColor='#111111'
+                          />  
+                        </div>
+                        </h2>
+
                     </div>
                 </div>
             </div>
