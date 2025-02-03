@@ -7,6 +7,9 @@ import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import LogoWall from './LogoWall';
+import { Languages } from "./Languages";
+
+import {Avatar} from "@heroui/react";
 
 import react from "../assets/img/react.svg";
 import nextjs from "../assets/img/next-js.svg";
@@ -79,24 +82,20 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>App/Web Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <h5>Attention to Detail</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>Collaboration</h5>
                             </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
+
                         </Carousel>
                         <h2>
-                          <br /> Frameworks:{" "}
-                          <div style={{height: '600px', width: '100%', position: 'relative'}}>
+                          <br /> Frameworks/Tools:{" "}
                           <LogoWall
                             items={logoImgs}
                             direction='horizontal'
@@ -106,11 +105,21 @@ export const Skills = () => {
                             bgColor='#060606'
                             bgAccentColor='#111111'
                           />  
-                          </div>
                         </h2>
+                        <h2>
+    <br />
+
+                          Languages:{" "}
+                        </h2>
+
+                        <div className="languages-section">
+                          <Languages />
+                        </div>
+
 
                     </div>
                 </div>
+                
             </div>
         </div>
         <img className="background-image-left" src={colorSharp} alt="Image" />
