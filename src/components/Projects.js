@@ -4,10 +4,17 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 
+
 import auctionArchitects from "../assets/img/auctionArchitects.png"
 import nbaFantasy from "../assets/img/nbaFantasy.png"
 import trainTrip from "../assets/img/trainTrip.png"
 import strideSense from "../assets/img/stridesense.png"
+import theraCam from "../assets/img/theracam.png"
+import maternisense from "../assets/img/maternisense.png"
+import greenscan from "../assets/img/greenscan.png"
+
+
+
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -17,18 +24,18 @@ import '../App.css'
 export const Projects = () => {
   // ✅ Categorized Personal Projects with GitHub Links
   const personalProjects = [
-    { title: "AuctionArchitects", description: "Design & Development", imgUrl: auctionArchitects, link: "https://github.com/Shahed4/AuctionArchitects" },
-    { title: "NBA-Fantasy-App", description: "Design & Development", imgUrl: nbaFantasy, link: "https://github.com/AlexAbraham2004/NBA-Fantasy-App" },
-    { title: "TrainTrip", description: "Design & Development", imgUrl: trainTrip, link: "https://github.com/AlexAbraham2004/TrainTrip" },
+    { title: "AuctionArchitects", description: "A full-stack e-commerce platform with real-time bidding, role-based user functionalities, and an AI-powered chatbot for seamless car buying and selling.", imgUrl: auctionArchitects, link: "https://github.com/Shahed4/AuctionArchitects" },
+    { title: "NBA-Fantasy-App", description: "A web application that fetches real-time NBA stats, player data, and schedules, allowing users to track and manage their fantasy basketball picks.", imgUrl: nbaFantasy, link: "https://github.com/AlexAbraham2004/NBA-Fantasy-App" },
+    { title: "TrainTrip", description: "A transit tracking application that utilizes GTFS data and APIs to provide real-time LIRR updates, ensuring commuters have up-to-date trip information.", imgUrl: trainTrip, link: "https://github.com/AlexAbraham2004/TrainTrip" },
   ];
   
 
   // ✅ Categorized Hackathon Projects with GitHub Links
 const hackathonProjects = [
-  { title: "GreenScan", description: "Hackathon Project", imgUrl: projImg1, link: "https://github.com/Shahed4/GreenScan"},
-  { title: "TheraCam", description: "Hackathon Project", imgUrl: projImg2, link: "https://github.com/Shahed4/TheraCam" },
-  { title: "MaterniSense", description: "Hackathon Project", imgUrl: projImg3, link: "https://github.com/Shahed4/Maternisense" },
-  { title: "StrideSense", description: "Hackathon Project", imgUrl: strideSense, link: "https://drive.google.com/file/d/1soKk125m047qiNw6eayR74uw46hKkulq/view?usp=sharing" }
+  { title: "GreenScan", description: "An AI-powered sustainability tool that identifies household items via live camera feeds and suggests creative reuse options to reduce waste.", imgUrl: greenscan, link: "https://github.com/Shahed4/GreenScan"},
+  { title: "TheraCam", description: "A real-time fitness tool utilizing OpenPose and machine learning to provide in-home posture correction and guided exercise feedback for elderly users.", imgUrl: theraCam, link: "https://github.com/Shahed4/TheraCam" },
+  { title: "MaterniSense", description: "A maternal health monitoring system integrating machine learning and hardware sensors (EMG, IMU, ECG) to provide real-time fetal health predictions and insights.", imgUrl: maternisense, link: "https://github.com/Shahed4/Maternisense" },
+  { title: "StrideSense", description: "A smart insole system using load cell sensors and targeted vibrations to improve circulation and mitigate the effects of plantar fasciitis in users.", imgUrl: strideSense, link: "https://drive.google.com/file/d/1soKk125m047qiNw6eayR74uw46hKkulq/view?usp=sharing" }
 ];
 
   return (
