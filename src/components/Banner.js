@@ -4,7 +4,7 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import MyGlobeComponent from "./global";
+import MyGlobeComponent from "./globe";
 
 
 export const Banner = () => {

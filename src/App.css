@@ -379,10 +379,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .proj-imgbx {
   width: 100%;
-  max-width: 350px; /* ✅ Ensures proper card sizing */
-  margin: auto;
+  max-width: 350px; /* ✅ Keeps images uniform */
+  min-height: 250px; /* ✅ Allows expansion based on content */
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* ✅ Ensures text expands vertically */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
 }
+
 
 .proj-imgbx img {
   width: 100%;
@@ -481,31 +487,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 .proj-txtx {
-  position: absolute;
   text-align: center;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.5s ease-in-out;
-  opacity: 0;
+  opacity: 1; /* ✅ Ensure visibility */
   width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1.1em;
+  line-height: 1.2em;
 }
+
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: 0.8px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  display: block;
+  text-align: center;
+  white-space: normal; /* ✅ Allow text wrapping */
+  overflow: visible; /* ✅ Prevent hidden text */
 }
+
 .background-image-right {
   top: 20%;
   position: absolute;

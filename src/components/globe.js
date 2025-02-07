@@ -33,7 +33,8 @@ function MyGlobeComponent() {
 
   return (
       <Globe
-
+        height={200}
+        width={200}
         backgroundColor='rgba(0,0,0,0)'
         ref={globeEl}
         animateIn={false}

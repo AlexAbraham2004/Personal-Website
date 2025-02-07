@@ -9,8 +9,6 @@ import colorSharp from "../assets/img/color-sharp.png"
 import LogoWall from './LogoWall';
 import { Languages } from "./Languages";
 
-import {Avatar} from "@heroui/react";
-
 import react from "../assets/img/react.svg";
 import nextjs from "../assets/img/next-js.svg";
 import materialui from "../assets/img/material-ui-1.svg";
