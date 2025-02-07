@@ -30,7 +30,8 @@ export const Experience = () => {
 
     return (
         <>
-            <div className='container' style={{
+            <div className='container' id="experience"
+            style={{
                 background: "linear-gradient(180deg, #000000, #2C003E)", 
                 padding: "40px",
                 borderRadius: "64px",
