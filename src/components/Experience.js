@@ -171,12 +171,15 @@ export const Experience = () => {
 
     return (
         <>
-            <div className='container' id="experience"
+            <div id="experience"
             style={{
                 background: "linear-gradient(180deg, #000000, #2C003E)", 
-                padding: "40px",
-                borderRadius: "64px",
+                padding: "40px 0",
+                width: "100%",
+                borderTop: "1px solid rgba(255, 255, 255, 0.2)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.2)"
             }}>
+                <div className='container' style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 15px" }}>
                 <h2 style={{
                     fontSize: "45px", 
                     fontWeight: "700", 
@@ -299,6 +302,7 @@ export const Experience = () => {
                         </div>
                     )}
                 </TrackVisibility>
+                </div>
             </div>
         </>
     );
