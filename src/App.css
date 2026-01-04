@@ -96,7 +96,11 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: auto;
+}
+nav.navbar a.navbar-brand img {
+    height: 42px;
+    width: auto;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -601,7 +605,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 20px 0 20px 0;
+  padding: 15px 0 15px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
@@ -668,14 +672,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  height: 42px;
+  width: auto;
 }
 .footer p {
   font-weight: 400;
   font-size: 14px;
   color: #B8B8B8;
   letter-spacing: 0.5px;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .hidden {
@@ -749,6 +754,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card-link:hover .proj-imgbx {
   transform: scale(1.05);
+}
+
+.proj-imgbx.train-trip-card {
+  max-width: 300px;
+}
+
+.proj-imgbx.train-trip-card img {
+  object-fit: contain;
 }
 
 .scene-container {
